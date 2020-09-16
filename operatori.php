@@ -45,7 +45,7 @@
 
     $a = 0;
     $b = 1;
-    $c = $a??$b;
+    $c = $a??$b; //ako vrednost za a ne postoji onda ispise b za rezultat od c
 //referentni operator dodele i necega
     $b = 10;
     $a = &$b;
