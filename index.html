@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-    <fieldset> <!-- fieldset je okvir oko forme a legend je ovaj kurac u fieldsetu-->
+    <fieldset>
         <legend>Logovanje</legend>
-    <form action="obradaGet.php" method="get">
-        <input type="text" name="nUser" id="iUser" placeholder="Unesi ime"> <br><br>
-        <input type="password" name="nPass" id="iPass" placeholder="Unesi pass"> <br><br>
-        <input type="submit" value="Uloguj se">
-    </form>
-</fieldset>
+        <form action="obradaPOST.php" method="POST">
+            <input type="text" name="nUser" id="iUser" placeholder="Unesite korisnicko ime..."><br><br>
+            <input type="password" name="nPass" id="iPass" placeholder="Unesite vasu sifru..."><br><br>
+            <input type="submit" value="Uloguj se">
+        </form>
+    </fieldset>
 </body>
 </html>
