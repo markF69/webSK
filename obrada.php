@@ -1,5 +1,7 @@
 <?php
 
+echo $_SERVER['PHP_SELF'];
+echo'<br>';
 //provera tipa zahteva od klijentske strane
 if($_SERVER['REQUEST_METHOD']=="GET"){
     echo "Podaci nece biti obradjeni zbog pogresne metode";
